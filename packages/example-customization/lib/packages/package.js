@@ -19,8 +19,12 @@ Package.onUse( function(api) {
   api.mainModule('client.js', 'client');
 
   api.addFiles([
-    'lib/links/demoSite/images/asu.png',
+
     'lib/stylesheets/custom.scss'
+  ], ['client']);
+
+  api.addAssets([
+    'lib/links/demoSite/images/asu.png'
   ], ['client']);
 
   api.addAssets([

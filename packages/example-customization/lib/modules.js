@@ -16,7 +16,7 @@ import "./components/CustomLogo.jsx";
 import "./components/CustomNewsletter.jsx";
 import "./components/CustomPostsItem.jsx";
 import "./components/twitterInsta.jsx";
-
+//import "./components/index.html";
 
 // custom routes
 import "./routes.jsx";

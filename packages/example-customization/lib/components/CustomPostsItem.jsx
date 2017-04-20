@@ -17,7 +17,6 @@ class CustomPostsItem extends getRawComponent('PostsItem') {
     if (post.color) {
       postClass += " post-"+post.color;
     }
-
     //
 
     return (
@@ -39,7 +38,7 @@ class CustomPostsItem extends getRawComponent('PostsItem') {
           </h3>
 
           <div className="posts-item-meta">
-            {post.user? <div className="posts-item-user"><Components.UsersAvatar user={post.user} size="large"/><Components.UsersName user={post.user}/></div> : null}
+            {post.user? <div className="posts-item-user"><Components.UsersAvatar user={post.user} size="medium"/><Components.UsersName user={post.user}/></div> : null}
             <div className="posts-item-date"><FormattedRelative value={post.postedAt}/></div>
             <div className="posts-item-comments">
               <Link to={Posts.getPageUrl(post)}>

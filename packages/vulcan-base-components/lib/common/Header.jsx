@@ -18,7 +18,7 @@ const Header = (props, context) => {
         </div>
 
         <div className="nav">
-          <a href="my-custom-route">Twitter Feed</a>
+          <a id="insta-twitter" href="/twitter-insta">ASU Live</a>
           <div className="nav-user">
             {!!props.currentUser ? <Components.UsersMenu/> : <Components.UsersAccountMenu/>}
           </div>

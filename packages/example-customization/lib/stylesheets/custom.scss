@@ -1,16 +1,38 @@
 .logo-hello {
-
   display: flex;
   justify-content: center;
   color: #333;
 }
 
 .logo-text{
-font-family: Papyrus, fantasy;
+  font-family: Papyrus, fantasy;
 }
 
 #logo {
   background-color: #111111;
+}
+
+#accounts-dropdown{
+  color: #9d9d9d
+}
+
+.logo-img{
+  height: 55px;
+}
+
+.nav {
+  color: #990033;
+}
+
+a {
+  color: #990033;
+}
+
+#insta-twitter{
+  font-family: Papyrus, fantasy;
+  color: #FFC425;
+  padding-right: 315px;
+  font-size: 35px;
 }
 
 .posts-item-comments a{
@@ -18,7 +40,7 @@ font-family: Papyrus, fantasy;
 }
 
 .users-name {
-  color: green;
+  color: #FFC425;
 }
 
 .tagline {
@@ -33,14 +55,7 @@ font-family: Papyrus, fantasy;
   color: #9d9d9d;
 }
 
-.btn-primary {
-  background-color: #990033;
-  border-color: #990033;
-}
-.btn-primary:hover {
-  background-color: #990333;
-  border-color: #990333;
-}
+
 
 .header-wrapper {
   background-color: #111111;

@@ -10,8 +10,8 @@ import { Link } from 'react-router';
 const MyCustomPage = () => {
   return (
     <div>
-      <h1>Welcome To My Custom Page!</h1>
-      <p>Nice to meet you.</p>
+      <h1>Link to ASU Live.</h1>
+
     </div>
   )
 }
