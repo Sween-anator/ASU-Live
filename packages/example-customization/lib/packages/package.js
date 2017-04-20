@@ -1,14 +1,18 @@
 Package.describe({
-  name: "example-customization"
+  name: "my-custom-package"
 });
 
 Package.onUse( function(api) {
 
-  api.use([
-    'vulcan:core',
-    'example-forum',
+  api.versionsFrom("METEOR@1.0");
 
-    'fourseven:scss@4.5.0',
+  api.use([
+    'fourseven:scss',
+
+    'vulcan:core',
+    'vulcan:base-components',
+    'vulcan:posts',
+    'vulcan:users'
   ]);
 
   api.mainModule('server.js', 'server');

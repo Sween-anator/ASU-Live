@@ -1,6 +1,6 @@
-/* 
+/*
 
-List of pics. 
+List of pics.
 Wrapped with the "withList" and "withCurrentUser" containers.
 
 */
@@ -12,11 +12,11 @@ import Pics from '../../modules/pics/collection.js';
 import PicsItem from './PicsItem.jsx';
 import PicsNewForm from './PicsNewForm.jsx';
 
-const PicsList = ({results = [], currentUser, loading, loadMore, count, totalCount}) => 
-  
+const PicsList = ({results = [], currentUser, loading, loadMore, count, totalCount}) =>
+
   <div className="pics-list">
 
-    {loading ? 
+    {loading ?
 
       <Loading /> :
 
@@ -28,11 +28,11 @@ const PicsList = ({results = [], currentUser, loading, loadMore, count, totalCou
 
         <div className="pics-list-footer">
           {totalCount > results.length ?
-            <a className="load-more" href="#" onClick={e => {e.preventDefault(); loadMore();}}>Load More ({count}/{totalCount})</a> : 
+            <a className="load-more" href="#" onClick={e => {e.preventDefault(); loadMore();}}>Load More ({count}/{totalCount})</a> :
             <p className="no-more">No more items.</p>
           }
         </div>
-        
+
       </div>
     }
 
@@ -41,7 +41,7 @@ const PicsList = ({results = [], currentUser, loading, loadMore, count, totalCou
 const options = {
   collection: Pics,
   fragmentName: 'PicsItemFragment',
-  limit: 6
+  limit: 5
 };
 
 export default withList(options)(withCurrentUser(PicsList));

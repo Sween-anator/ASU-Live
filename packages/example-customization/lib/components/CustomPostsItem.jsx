@@ -13,11 +13,12 @@ class CustomPostsItem extends getRawComponent('PostsItem') {
     let postClass = "posts-item";
     if (post.sticky) postClass += " posts-sticky";
 
-    // ⭐ custom code starts here ⭐
+    //
     if (post.color) {
       postClass += " post-"+post.color;
     }
-    // ⭐ custom code ends here ⭐
+
+    //
 
     return (
       <div className={postClass}>
@@ -38,7 +39,7 @@ class CustomPostsItem extends getRawComponent('PostsItem') {
           </h3>
 
           <div className="posts-item-meta">
-            {post.user? <div className="posts-item-user"><Components.UsersAvatar user={post.user} size="small"/><Components.UsersName user={post.user}/></div> : null}
+            {post.user? <div className="posts-item-user"><Components.UsersAvatar user={post.user} size="large"/><Components.UsersName user={post.user}/></div> : null}
             <div className="posts-item-date"><FormattedRelative value={post.postedAt}/></div>
             <div className="posts-item-comments">
               <Link to={Posts.getPageUrl(post)}>

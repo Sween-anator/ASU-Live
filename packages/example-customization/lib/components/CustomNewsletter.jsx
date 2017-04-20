@@ -14,7 +14,7 @@ import { FormattedMessage /*, intlShape */ } from 'react-intl';
 class CustomNewsletter extends getRawComponent('Newsletter') {
 
   render() {
-    // console.log(this.renderButton); <-- exists
+    //console.log(this.renderButton); <-- exists
 
     return this.state.showBanner
       ? (

@@ -1,9 +1,50 @@
 .logo-hello {
+
   display: flex;
   justify-content: center;
   color: #333;
 }
 
+.logo-text{
+font-family: Papyrus, fantasy;
+}
+
+#logo {
+  background-color: #111111;
+}
+
+.posts-item-comments a{
+  color: #990033;
+}
+
+.users-name {
+  color: green;
+}
+
+.tagline {
+  color: #9d9d9d;
+}
+
+.logo-hello{
+  color: #9d9d9d;
+}
+
+#user-dropdown{
+  color: #9d9d9d;
+}
+
+.btn-primary {
+  background-color: #990033;
+  border-color: #990033;
+}
+.btn-primary:hover {
+  background-color: #990333;
+  border-color: #990333;
+}
+
+.header-wrapper {
+  background-color: #111111;
+}
 .post-red{
   background-color: #FFD3D2;
 }
